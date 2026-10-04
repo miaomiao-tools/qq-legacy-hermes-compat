@@ -1,0 +1,6 @@
+# Merge only this setting into the existing QQ adapter configuration.
+# This is not a complete Hermes configuration.
+platforms:
+  qqbot:
+    extra:
+      markdown_support: false

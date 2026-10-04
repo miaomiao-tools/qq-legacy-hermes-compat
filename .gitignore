@@ -1,0 +1,11 @@
+# Public guide only. All additions require an explicit allowlist entry.
+*
+!README.md
+!README.en.md
+!config.example.yaml
+!c2c-no-quote.patch
+!regression_test.py
+!LICENSE.Hermes
+!LICENSE
+!NOTICE
+!.gitignore

@@ -1,0 +1,12 @@
+--- a/gateway/platforms/qqbot/adapter.py
++++ b/gateway/platforms/qqbot/adapter.py
+@@ -1417,6 +1417,9 @@
+         """Send text (optionally with an inline keyboard) to a c2c user or group."""
+         self._next_msg_seq(reply_to or target_id)
+         body = self._build_text_body(content, reply_to)
++        if chat_type == "c2c":
++            # msg_id correlates the passive reply; a visible quote is independent.
++            body.pop("message_reference", None)
+         if reply_to:
+             body["msg_id"] = reply_to
+         if keyboard is not None:

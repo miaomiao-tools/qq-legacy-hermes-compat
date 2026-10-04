@@ -1,0 +1,33 @@
+Hermes × Classic QQ: Plain-text Compatibility Guide
+Hermes × 经典 QQ：文字消息兼容指南
+
+Unofficial project. Not affiliated with or endorsed by Tencent or Nous Research.
+非官方项目，不代表腾讯或 Nous Research，也不表示获得其背书。
+
+Upstream provenance / 上游来源
+Project: NousResearch/hermes-agent
+Source revision: f97608f178d1ffeca59860195ab7da295f7c8e5f
+Tested release baseline: v2026.9.24 / 0.21.5
+Source file: gateway/platforms/qqbot/adapter.py
+https://github.com/NousResearch/hermes-agent/blob/f97608f178d1ffeca59860195ab7da295f7c8e5f/gateway/platforms/qqbot/adapter.py
+Original license:
+https://github.com/NousResearch/hermes-agent/blob/f97608f178d1ffeca59860195ab7da295f7c8e5f/LICENSE
+Copyright (c) 2025 Nous Research
+
+LICENSE.Hermes is an unchanged byte copy of that revision's LICENSE. It applies
+to upstream material, including the original lines shown as patch context.
+The patch adds three lines to omit the visible message_reference field on the
+C2C send path while preserving msg_id/msg_seq. It does not redistribute the
+full upstream adapter or a QQ executable.
+
+LICENSE.Hermes 完整保留该提交的上游 LICENSE 原文和署名，适用于上游材料，
+包括补丁中的原始上下文。补丁新增三行，只在 C2C 发送路径移除可见引用字段，
+保留 msg_id/msg_seq。本项目不分发完整上游适配器或 QQ 程序。
+
+Project license / 项目许可
+The newly authored guide, regression test, and three-line modification are
+licensed under MIT; see LICENSE. Copyright (c) 2026 miaomiao tools.
+This project attribution does not replace the upstream copyright.
+
+新写指南、回归测试和三行修改采用 LICENSE 中的 MIT 许可，
+Copyright (c) 2026 miaomiao tools。项目署名不替代上游版权声明。
